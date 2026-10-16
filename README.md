@@ -1,6 +1,6 @@
 A build aimed to fix everything broken in the engine and probably revive the game in the future.
 
-Special Thanks
+Special Thanks:
 
 The Loco Tower Team
 
