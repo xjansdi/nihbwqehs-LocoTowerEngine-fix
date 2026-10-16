@@ -1,7 +1,7 @@
-spr_walk = spr_catripi_following_move
-spr_idle = spr_catripi_follow_idle
-spr_panic_idle = spr_catripi_follow_showtime_idle
-spr_panic_walk = spr_catripi_following_showtime_move
+spr_walk = spr_catripifollow_move
+spr_idle = spr_catripifollow_idle
+spr_panic_idle = spr_catripifollow_escapeidle
+spr_panic_walk = spr_catripifollow_escapemove
 spr_taunt = spr_catripi_taunt
 state = "normal" //taunt,hitstun
 storedvars = {

@@ -111,10 +111,10 @@ function scr_collision() {
 	
 	#region Vertical
 	var remaining_vsp = vsp; // Track the remaining vertical movement.
-	var move_steps = ceil((abs(vsp) / bbox_height)); // Repeat per Bbox Height.
+	var move_stepsY = ceil((abs(vsp) / bbox_height)); // Repeat per Bbox Height.
 	var move_vsp;
 	
-	repeat (move_steps) { // Repeat per Bbox Height.
+	repeat (move_stepsY) { // Repeat per Bbox Height.
 		move_vsp = clamp(abs(remaining_vsp), 0, bbox_height) * sign(remaining_vsp); // Calculate max units to move.	
 
 		if (place_meeting_collision(x, y + move_vsp)) { 
@@ -147,10 +147,10 @@ function scr_collision() {
 	
 	#region Horizontal
 	var remaining_hsp = hsp; // Track the remaining horizontal movement.
-	var move_steps = ceil((abs(hsp) / bbox_width)); // Repeat per Bbox Height.
+	var move_stepsX = ceil((abs(hsp) / bbox_width)); // Repeat per Bbox Height.
 	var move_hsp;
 	
-	repeat (move_steps) { // Repeat per Bbox Height.
+	repeat (move_stepsX) { // Repeat per Bbox Height.
 		move_hsp = clamp(abs(remaining_hsp), 0, bbox_width) * sign(remaining_hsp); // Calculate max units to move.	
 		var on_ground = place_meeting_collision(x, y + 1);
 		

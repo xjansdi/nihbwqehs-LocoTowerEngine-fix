@@ -69,13 +69,13 @@ if state == "normal"
 			{
 				if (basefollowobj.state_id == state_player_normal && basefollowobj.grounded || basefollowobj.state_id == state_player_crouch || basefollowobj.state_id == state_player_mach || basefollowobj.state_id == state_player_sjump_prepare /*|| (basefollowobj.state == states.machslide && (basefollowobj.sprite_index == basefollowobj.spr_machslide || basefollowobj.sprite_index == basefollowobj.spr_machslidestart)) */) && abs(basefollowobj.hsp) <= 8
 				{
-					var thing = (1 - (abs(basefollowobj.hsp) / 8)) * xoffset
+					var thing2 = (1 - (abs(basefollowobj.hsp) / 8)) * xoffset
 
-					var gotonum = abs(get_lerp_number(space,thing * -thingie.xscale,0.15))
+					var gotonum = abs(get_lerp_number(space,thing2 * -thingie.xscale,0.15))
 					if abs(gotonum) <= 1
 						gotonum = 1
 					gotonum = xoffset / 15
-					space = Approach(space, thing * -thingie.xscale,gotonum)
+					space = Approach(space, thing2 * -thingie.xscale,gotonum)
 				}
 				else
 				{
